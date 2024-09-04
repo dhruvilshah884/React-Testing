@@ -11,7 +11,7 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "*",
         credentials: true,
     })
 )
